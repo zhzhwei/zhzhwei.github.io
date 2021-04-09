@@ -154,7 +154,7 @@
     <li><a href="#5configure-theme">5.configure theme</a></li>
     <li><a href="#6add-a-new-blog">6.add a new blog</a></li>
     <li><a href="#7package-md-file">7.package md file</a></li>
-    <li><a href="#8create-a-new-repository">8.create a new repository</a></li>
+    <li><a href="#8create-a-new-repo">8.create a new repo</a></li>
     <li><a href="#9deploy-online">9.deploy online</a></li>
   </ul>
 </nav>
@@ -167,7 +167,10 @@
 </blockquote>
 <h1 id="2build-hugo-site">2.build hugo site</h1>
 <blockquote>
-<p>command: &ldquo;hugo new site [site-name]&rdquo; eg: my site is &ldquo;blog&rdquo; which is created by command &ldquo;hugo new site blog&rdquo;. After installation you can verify it by entering the following command: &ldquo;hugo version&rdquo;. Once created, the following file structure will be created under the blog folder.</p>
+<p>command: &ldquo;hugo new site [site-name]&rdquo;</p>
+<p>eg: my site is &ldquo;blog&rdquo; which is created by command &ldquo;hugo new site blog&rdquo;.</p>
+<p>After installation you can verify it by entering the following command: &ldquo;hugo version&rdquo;.</p>
+<p>Once created, the following file structure will be created under the blog folder.</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -182,7 +185,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">.
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">.
 ├── archetypes # default.md for blog template
 ├── assets #
 ├── config # hugo configuration file: JSON/YAML/TOML format
@@ -195,7 +198,10 @@
 </div>
 </div><h1 id="3add-blog-theme">3.add blog theme</h1>
 <blockquote>
-<p>enter site directory: &ldquo;cd blog&rdquo; and then add theme: &ldquo;git clone <a href="https://github.com/olOwOlo/hugo-theme-even">https://github.com/olOwOlo/hugo-theme-even</a> themes/even&rdquo;. Enter the &ldquo;blog/themes/even/exampleSite&rdquo; folder, copy the config.toml file and content folder to overwrite the config.toml and content folder int the root of the site.</p>
+<p>enter site directory: &ldquo;cd blog&rdquo;</p>
+<p>and then add theme: &ldquo;git clone <a href="https://github.com/olOwOlo/hugo-theme-even">https://github.com/olOwOlo/hugo-theme-even</a> themes/even&rdquo;.</p>
+<p>Enter the &ldquo;blog/themes/even/exampleSite&rdquo; folder,</p>
+<p>copy the config.toml file and content folder to overwrite the config.toml and content folder int the root of the site.</p>
 </blockquote>
 <h1 id="4start-hugo">4.start hugo</h1>
 <blockquote>
@@ -240,7 +246,7 @@ categories: []
 <blockquote>
 <p>In order to deploy online, you need to package the Markdown file into an HTML file. Enter the command: &ldquo;hugo -t even&rdquo; in the root directory, &ldquo;even&rdquo; is the subject name, then the &ldquo;public&rdquo; folder will be created in the blog folder. As like Hexo, the contents of Hugo&rsquo;s public folder are the files for the static site.</p>
 </blockquote>
-<h1 id="8create-a-new-repository">8.create a new repository</h1>
+<h1 id="8create-a-new-repo">8.create a new repo</h1>
 <blockquote>
 <p>Create a new repository with username.github.io (eg.zhzhwei.github.io). Clone this repo from github website to your computer. Delete all the files except &ldquo;.git&rdquo; in your computer.</p>
 </blockquote>
