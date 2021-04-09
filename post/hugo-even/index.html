@@ -49,8 +49,8 @@
 <meta itemprop="name" content="Use Hugo&#43;Even&#43;Github to build a personal blog">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2021-04-08T21:05:47&#43;02:00" />
 <meta itemprop="dateModified" content="2021-04-08T21:05:47&#43;02:00" />
-<meta itemprop="wordCount" content="386">
-<meta itemprop="keywords" content="Hugo,Even," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="630">
+<meta itemprop="keywords" content="Hugo,Even,Github," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Use Hugo&#43;Even&#43;Github to build a personal blog"/>
 <meta name="twitter:description" content=""/>
 
@@ -136,8 +136,8 @@
         <div class="post-category">
             <a href="/categories/tutorial/"> Tutorial </a>
             </div>
-          <span class="more-meta"> 386 words </span>
-          <span class="more-meta"> 2 mins read </span>
+          <span class="more-meta"> 630 words </span>
+          <span class="more-meta"> 3 mins read </span>
         
       </div>
     </header>
@@ -148,12 +148,14 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#1install-hugo">1.install Hugo</a></li>
-    <li><a href="#2build-hugo-project">2.build hugo project</a></li>
+    <li><a href="#2build-hugo-site">2.build hugo site</a></li>
     <li><a href="#3add-blog-theme">3.add blog theme</a></li>
     <li><a href="#4start-hugo">4.start hugo</a></li>
     <li><a href="#5configure-theme">5.configure theme</a></li>
     <li><a href="#6add-a-new-blog">6.add a new blog</a></li>
-    <li><a href="#7-package-md-file">7. package md file</a></li>
+    <li><a href="#7package-md-file">7.package md file</a></li>
+    <li><a href="#8create-a-new-repository">8.create a new repository</a></li>
+    <li><a href="#9deploy-online">9.deploy online</a></li>
   </ul>
 </nav>
   </div>
@@ -161,29 +163,53 @@
     <div class="post-content">
       <h1 id="1install-hugo">1.install Hugo</h1>
 <blockquote>
-<p>sudo apt install hugo</p>
+<p>command: sudo apt install hugo</p>
 </blockquote>
-<h1 id="2build-hugo-project">2.build hugo project</h1>
+<h1 id="2build-hugo-site">2.build hugo site</h1>
 <blockquote>
-<p>hugo new site [project-name]
-e.g. my site is &ldquo;blog&rdquo; which is created by command &ldquo;hugo new site blog&rdquo;</p>
+<p>command: &ldquo;hugo new site [site-name]&rdquo; eg: my site is &ldquo;blog&rdquo; which is created by command &ldquo;hugo new site blog&rdquo;. After installation you can verify it by entering the following command: &ldquo;hugo version&rdquo;. Once created, the following file structure will be created under the blog folder.</p>
 </blockquote>
-<h1 id="3add-blog-theme">3.add blog theme</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">.
+├── archetypes # default.md for blog template
+├── assets #
+├── config # hugo configuration file: JSON/YAML/TOML format
+├── content # markdown file
+├── data # 
+├── layouts # 
+├── static # static files: Image,CSS,JS files
+└── themes # all theme folders
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="3add-blog-theme">3.add blog theme</h1>
 <blockquote>
-<p>enter site directory: cd blog
-add theme: git clone <a href="https://github.com/olOwOlo/hugo-theme-even">https://github.com/olOwOlo/hugo-theme-even</a> themes/even</p>
+<p>enter site directory: &ldquo;cd blog&rdquo; and then add theme: &ldquo;git clone <a href="https://github.com/olOwOlo/hugo-theme-even">https://github.com/olOwOlo/hugo-theme-even</a> themes/even&rdquo;. Enter the &ldquo;blog/themes/even/exampleSite&rdquo; folder, copy the config.toml file and content folder to overwrite the config.toml and content folder int the root of the site.</p>
 </blockquote>
 <h1 id="4start-hugo">4.start hugo</h1>
 <blockquote>
-<p>hugo server</p>
+<p>command: hugo server</p>
+<p>Enter the link http://localhost:1313/ in your browser to see the results.</p>
 </blockquote>
 <h1 id="5configure-theme">5.configure theme</h1>
 <blockquote>
-<p>For personal use, we need to modify the config.toml file, just change the configuration according to the instructions. My theme configuration file <a href="https://github.com/zhzhwei/zhzhwei.github.io/blob/master/config.toml">https://github.com/zhzhwei/zhzhwei.github.io/blob/master/config.toml</a> Go to the blog/themes/even folder and you will see that the file structure is almost identical to the one of the new Hugo project. This is set up so that the user&rsquo;s configuration can override the theme&rsquo;s configuration. For example, if I want to customize the bottom display, the hugo-theme-even bottom configuration is controlled by blog/themes/even/layouts/partials/footer.html. To override the theme&rsquo;s configuration, create a new blog/layouts/partials/footer.html file in the root of the project and fill in the custom content to override the theme&rsquo;s configuration. The overriding is the same for other files. hugo-theme-even uses Webpack to package js,css and add hash value to the file name, this kind of css,js files can&rsquo;t be overwritten, but hugo-theme-even configuration file has parameters to overwrite this css,js, refer to my file configuration for details.</p>
+<p>For personal use, we need to modify the config.toml configuration file according to the instructions. My theme configuration file &ldquo;<a href="https://github.com/zhzhwei/zhzhwei.github.io/blob/master/config.toml%22">https://github.com/zhzhwei/zhzhwei.github.io/blob/master/config.toml&quot;</a>. Enter &ldquo;blog/themes/even&rdquo; folder and you will see that the file structure is almost identical to the one of the new Hugo site. This setting is so that the user&rsquo;s configuration can override the theme&rsquo;s configuration. For example, if I want to customize the bottom display, the hugo-theme-even bottom configuration is controlled by &ldquo;blog/themes/even/layouts/partials/footer.html&rdquo;. To override the theme&rsquo;s configuration, create a new &ldquo;blog/layouts/partials/footer.html&rdquo; file in the root of the site and fill in the custom content to override the theme&rsquo;s configuration. The overriding is the same for other files. hugo-theme-even uses Webpack to package js,css and add hash value to the file name, these css,js files can&rsquo;t be overwritten, but hugo-theme-even configuration file has parameters to overwrite this css,js, refer to my theme configuration file for more details.</p>
 </blockquote>
 <h1 id="6add-a-new-blog">6.add a new blog</h1>
 <blockquote>
-<p>The command to add a new blog is relatively simple, it&rsquo;s as follows: &ldquo;hugo new post/my-first-blog.md&rdquo;  copy this command then it will use the template to create a file. It looks for the user&rsquo;s template file first, if template file does&rsquo;t exist, it will look for the theme&rsquo;s template file. The hugo-theme-even template file &ldquo;blog/themes/even/archetypes/default.md&rdquo; is relative complicated, just use the &ldquo;blog/archetypes/default.md&rdquo; file to overwrite it. My template configuration is as follows:</p>
+<p>command: hugo new post/hugo-even.md</p>
+<p>It will automatically look for the post folder unter site and then use the template to create a file. It will try to use user&rsquo;s template file first, if this file does&rsquo;t exist, it will look for the theme&rsquo;s template file. The hugo-theme-even template file &ldquo;blog/themes/even/archetypes/default.md&rdquo; is relatively complicated, just use the &ldquo;blog/archetypes/default.md&rdquo; file to overwrite and edit it. My template default.md is as follows:</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -210,10 +236,39 @@ categories: []
 </div><blockquote>
 <p>The draft parameter value controls whether the page is displayed on the website. The page will be displayed only if it is set to false or if the page is deleted. The previous content before <code>&lt;!--more--&gt; </code> is automatically used as a basic information of page.</p>
 </blockquote>
-<h1 id="7-package-md-file">7. package md file</h1>
+<h1 id="7package-md-file">7.package md file</h1>
 <blockquote>
-<p>In order to deploy online, you need to package the Markdown file into an HTML file. The packaging command is as follows: &ldquo;hugo -t even&rdquo;, &ldquo;even&rdquo; is the subject name.</p>
+<p>In order to deploy online, you need to package the Markdown file into an HTML file. Enter the command: &ldquo;hugo -t even&rdquo; in the root directory, &ldquo;even&rdquo; is the subject name, then the &ldquo;public&rdquo; folder will be created in the blog folder. As like Hexo, the contents of Hugo&rsquo;s public folder are the files for the static site.</p>
 </blockquote>
+<h1 id="8create-a-new-repository">8.create a new repository</h1>
+<blockquote>
+<p>Create a new repository with username.github.io (eg.zhzhwei.github.io). Clone this repo from github website to your computer. Delete all the files except &ldquo;.git&rdquo; in your computer.</p>
+</blockquote>
+<h1 id="9deploy-online">9.deploy online</h1>
+<blockquote>
+<p>Copy all the files except &ldquo;.git&rdquo; folder from hugo site (eg.blog) to the repo on it(eg:zhzhwei.github.io) and then begin to deploy online. Finally, open username.github.io in your browser and you will see your generated personal blog. My commands are as follows:</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">hugo -t even # create public folder
+cd public
+git init
+git remote add origin git@github.com:zhzhwei/zhzhwei.github.io.git
+git add .
+git commit -m &#39;init&#39;
+git push -f --set-upstream origin master
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
@@ -235,6 +290,7 @@ categories: []
       <div class="post-tags">
           <a href="/tags/hugo/">Hugo</a>
           <a href="/tags/even/">Even</a>
+          <a href="/tags/github/">Github</a>
           </div>
       <nav class="post-nav">
         <a class="prev" href="/post/data-visualization/">
