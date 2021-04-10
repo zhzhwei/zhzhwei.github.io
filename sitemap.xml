@@ -10,20 +10,76 @@
   
   <url>
     <loc>https://zhzhwei.github.io/categories/</loc>
-    <lastmod>2021-04-08T21:17:40+02:00</lastmod>
+    <lastmod>2021-04-10T21:48:49+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://zhzhwei.github.io/post/data-visualization/</loc>
-    <lastmod>2021-04-08T21:17:40+02:00</lastmod>
+    <loc>https://zhzhwei.github.io/tags/dv/</loc>
+    <lastmod>2021-04-10T21:48:49+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhzhwei.github.io/post/paraview/</loc>
+    <lastmod>2021-04-10T21:48:49+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhzhwei.github.io/tags/paraview/</loc>
+    <lastmod>2021-04-10T21:48:49+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://zhzhwei.github.io/post/</loc>
+    <lastmod>2021-04-10T21:48:49+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhzhwei.github.io/tags/programm/</loc>
+    <lastmod>2021-04-10T21:48:49+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhzhwei.github.io/tags/</loc>
+    <lastmod>2021-04-10T21:48:49+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhzhwei.github.io/categories/tud/</loc>
+    <lastmod>2021-04-10T21:48:49+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhzhwei.github.io/categories/tutorial/</loc>
+    <lastmod>2021-04-10T21:48:49+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhzhwei.github.io/</loc>
+    <lastmod>2021-04-10T21:48:49+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhzhwei.github.io/post/data-visualization/</loc>
     <lastmod>2021-04-08T21:17:40+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -37,21 +93,7 @@
   </url>
   
   <url>
-    <loc>https://zhzhwei.github.io/tags/</loc>
-    <lastmod>2021-04-08T21:17:40+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://zhzhwei.github.io/tags/tud/</loc>
-    <lastmod>2021-04-08T21:17:40+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhzhwei.github.io/</loc>
     <lastmod>2021-04-08T21:17:40+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -87,13 +129,6 @@
   
   <url>
     <loc>https://zhzhwei.github.io/tags/hugo/</loc>
-    <lastmod>2021-04-08T21:05:47+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhzhwei.github.io/categories/tutorial/</loc>
     <lastmod>2021-04-08T21:05:47+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
