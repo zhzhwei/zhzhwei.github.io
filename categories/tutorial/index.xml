@@ -25,13 +25,6 @@
       <description>&lt;h1 id=&#34;1install-hugo&#34;&gt;1.install hugo&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;command: sudo apt install hugo&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&#34;2build-hugo-site&#34;&gt;2.build hugo site&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;command: hugo new site [site-name]&lt;/p&gt;
-&lt;p&gt;eg: my site is &amp;ldquo;blog&amp;rdquo; which is created by command &amp;ldquo;hugo new site blog&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;After installation you can verify it by entering the following command: &amp;ldquo;hugo version&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;Once created, the following file structure will be created under the blog folder.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
